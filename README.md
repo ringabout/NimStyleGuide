@@ -1,5 +1,5 @@
 # NimStyleGuide
-The style guide for Nim, only apply to our teams' project.
+The style guide for Nim which only applies to our teams' project.
 
 ## Preference
 
