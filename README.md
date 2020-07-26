@@ -7,6 +7,20 @@ The style guide for Nim which only applies to our teams' project.
 
 ### Prefer `a.len = 0` to `a == ""`
 
+
+## Style
+
+### Long parameters
+
+```nim
+proc createIoCompletionPort*(
+  FileHandle: Handle, 
+  ExistingCompletionPort: Handle,
+  CompletionKey: ULONG_PTR, 
+  NumberOfConcurrentThreads: DWORD
+): Handle {.libKernel32, importc: "CreateIoCompletionPort"}
+```
+
 ## Docs requirements
 
 ```nim
