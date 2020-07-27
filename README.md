@@ -1,5 +1,5 @@
 # NimStyleGuide
-The style guide for Nim which only applies to our teams' project.
+The style guide for Nim only applies to our teams' project.
 
 ## Preference
 
@@ -31,5 +31,30 @@ proc foo(a: int, b: string): int
   ##         - ``b``: An string.
   ## Returns:
   ##         - Return results.
-
 ```
+
+### Whether examples are runnable
+
+If examples are runnable
+```nim
+proc foo(a: int, b: string): int
+  ## Calculate something.
+  runnableExamples:
+    assert foo(12, "ok") == 3
+```
+
+Otherwise
+
+```nim
+```nim
+proc foo(a: int, b: string): int
+  ## Calculate something.
+  ## .. code-block:: Nim
+  ##   assert foo(12, "ok") == 3
+```
+
+## Tests
+
+Use `testament` instead of `unittest`.
+
+
