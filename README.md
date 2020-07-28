@@ -23,7 +23,7 @@ proc createIoCompletionPort*(
 
 ## C wrapper reuqirements
 
-C wrapper must be both standard and corrent.
+C wrapper must be both standard and correct.
 
 | ctypes             | nim types  |
 |--------------------|------------|
