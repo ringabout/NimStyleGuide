@@ -1,6 +1,10 @@
 # NimStyleGuide
 The style guide for Nim only applies to our team's projects.
 
+## Philosophy
+
+### Explicit is better than implicit
+
 ## Preference
 
 ### Prefer `a == nil` to `a.isNil`
@@ -38,8 +42,8 @@ C wrapper must be both standard and correct.
 | unsigned long      | culong     |
 | long long          | clonglong  |
 | unsigned long long | culonglong |
-| char *             | cstring    |
-| void *             | pointer    |
+| [const] char*      | cstring    |
+| [const] void *     | pointer    |
 
 For example,
 
