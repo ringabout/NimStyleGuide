@@ -64,19 +64,6 @@ type
   PUINT16* = ptr UINT16
 ```
 
-If you want to use `ptr object` in the function declaration, use `var object` instead,
-
-```nim
-proc getQueuedCompletionStatus*(
-  completionPort: Handle,
-  lpNumberOfBytesTransferred: var DWORD,
-  lpCompletionKey: var ULONG_PTR,
-  lpOverlapped: var OVERLAPPED,
-  dwMilliseconds: DWORD
-): WINBOOL {.libKernel32, importc: "GetQueuedCompletionStatus"}
-```
-
-
 ## Docs requirements
 
 ```nim
