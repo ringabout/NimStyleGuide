@@ -109,6 +109,10 @@ proc foo(a: int, b: string): int
   ##   assert foo(12, "ok") == 3
 ```
 
+## Notes
+
+### Your variable's name can't be as same as modules' name.
+
 ## Tests
 
 Use `testament` instead of `unittest`.
